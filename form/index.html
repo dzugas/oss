@@ -31,7 +31,7 @@
             position: relative;
         }
 
-        .errorMsg {
+        #errormsg {
             position: absolute;
             left: 125px;
             top: 30px;
@@ -52,20 +52,20 @@
                     <form onsubmit="return myForm()" id="testForm">
                         <div>
                             <label for="firstName">First name</label>
-                            <input type="text" id="firstName">
-                            <div class="errormsg">Please, fill this field!</div>
+                            <input type="text" id="firstName" onclick="error()">
+                            <div id="errormsg">Please, fill this field!</div>
                         </div>
 
                         <div>
                             <label for="lastName">Last name</label>
-                            <input type="text" id="lastName">
-                            <div class="errormsg">Please, fill this field!</div>
+                            <input type="text" id="lastName" onclick="error()">
+                            <div id="errormsg">Please, fill this field!</div>
                         </div>
 
                         <div>
                             <label for="email">Email</label>
-                            <input type="text" id="email">
-                            <div class="errormsg">Please, fill this field!</div>
+                            <input type="text" id="email" onclick="error()">
+                            <div id="errormsg">Please, fill this field!</div>
                         </div>
 
                         <button type="submit">Send</button>

@@ -19,6 +19,12 @@ function myForm() {
     alert("Submitted");
 }
 
-function error() {
-    var errorMsg = document.querySelector("errormsg")
+function error(errormsg) {
+    if (document.getElementById("errormsg").style.display == "none") {
+        document.getElementById("errormsg").style.display = "block"
+    } else {
+        document.getElementById("errormsg").style.display = "none"
+    }
+
+
 }
