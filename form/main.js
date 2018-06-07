@@ -1,30 +1,35 @@
 "use strict"
 
 function myForm() {
+	
     var firstName = document.getElementById("firstName").value;
+
     var lastName = document.getElementById("lastName").value;
+
     var emailIndex = document.getElementById("email").value.indexOf("@");
+	
+	if (firstName !== "" && lastName !== "" && emailIndex !== -1) {
+		alert("Submitted");
+		return true
+	}
+
     if (firstName === "") {
-        alert("Name must be filled out");
-        return false;
-    };
-    if (lastName === "") {
-        alert("Name must be filled out");
-        return false;
-    };
-    if (emailIndex === -1) {
-        alert("Email must be valid");
-        return false;
-    };
-    alert("Submitted");
+		
+      document.getElementById("errormsg1").style.display = "block";
+	
+    } 
+	
+	if (lastName === "") {
+		document.getElementById("errormsg2").style.display = "block";
+        
+
+    } 
+
+	if (emailIndex === -1) {
+		document.getElementById("errormsg3").style.display = "block";
+    } 
+	
+	return false
+	
 }
 
-function error(errormsg) {
-    if (document.getElementById("errormsg").style.display == "none") {
-        document.getElementById("errormsg").style.display = "block"
-    } else {
-        document.getElementById("errormsg").style.display = "none"
-    }
-
-
-}

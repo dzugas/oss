@@ -31,14 +31,14 @@
             position: relative;
         }
 
-        #errormsg {
-            position: absolute;
-            left: 125px;
-            top: 30px;
-            width: 140px;
+        .errormsg {
             text-align: center;
             color: red;
-            background-color: aquamarine;
+            border: 1px solid red;
+            display: none;
+            width: 155px;
+            margin-left: 110px;
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -49,23 +49,23 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="content">
-                    <form onsubmit="return myForm()" id="testForm">
+                    <form onsubmit="event.preventDefault(); myForm();" id="testForm">
                         <div>
                             <label for="firstName">First name</label>
-                            <input type="text" id="firstName" onclick="error()">
-                            <div id="errormsg">Please, fill this field!</div>
+                            <input type="text" id="firstName">
+                            <div class="errormsg" id="errormsg1">Please, fill first name!</div>
                         </div>
 
                         <div>
                             <label for="lastName">Last name</label>
-                            <input type="text" id="lastName" onclick="error()">
-                            <div id="errormsg">Please, fill this field!</div>
+                            <input type="text" id="lastName">
+                            <div class="errormsg" id="errormsg2">Please, fill last name!</div>
                         </div>
 
                         <div>
                             <label for="email">Email</label>
-                            <input type="text" id="email" onclick="error()">
-                            <div id="errormsg">Please, fill this field!</div>
+                            <input type="text" id="email">
+                            <div class="errormsg" id="errormsg3">Please, fill email!</div>
                         </div>
 
                         <button type="submit">Send</button>
