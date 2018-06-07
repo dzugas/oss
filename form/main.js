@@ -18,3 +18,7 @@ function myForm() {
     };
     alert("Submitted");
 }
+
+function error() {
+    var errorMsg = document.querySelector("errormsg")
+}

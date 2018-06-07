@@ -26,6 +26,20 @@
             padding: 15px;
             border: 1px solid #ccc;
         }
+
+        form label {
+            position: relative;
+        }
+
+        .errorMsg {
+            position: absolute;
+            left: 125px;
+            top: 30px;
+            width: 140px;
+            text-align: center;
+            color: red;
+            background-color: aquamarine;
+        }
     </style>
 </head>
 
@@ -39,16 +53,19 @@
                         <div>
                             <label for="firstName">First name</label>
                             <input type="text" id="firstName">
+                            <div class="errormsg">Please, fill this field!</div>
                         </div>
-                        
+
                         <div>
                             <label for="lastName">Last name</label>
                             <input type="text" id="lastName">
+                            <div class="errormsg">Please, fill this field!</div>
                         </div>
-                        
+
                         <div>
                             <label for="email">Email</label>
                             <input type="text" id="email">
+                            <div class="errormsg">Please, fill this field!</div>
                         </div>
 
                         <button type="submit">Send</button>
