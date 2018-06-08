@@ -5,11 +5,12 @@ body {
 p {
     font-size: 12px;
     color: #343433;
-    text-indent: 15px;
+    text-indent: 40px;
 }
 
 img {
     max-width: 100%;
+    
 }
 
 ul,
@@ -22,15 +23,12 @@ li {
 .logo {
     margin: 0 auto;
     padding-top: 60px;
+    padding-bottom: 25px;
 }
 
 .logo h1 {
     font-size: 89px;
     color: #bebcba;
-}
-
-span {
-    text-decoration: underline;
 }
 
 .background {
@@ -112,36 +110,81 @@ span {
     
 }
 
-/*
-.features-block__item {}
-
-.features-block__item-photo img {
-    border: 10px solid white;
-    box-shadow: 1px -4px 5px 0px rgba(0, 0, 0, 0.75),
-    -1px -4px 5px -10px rgba(0, 0, 0, 0.75);
-
-}
-
-.features-block__item-text {
-    background-color: white;
-    width: 90%;
-}
-*/
-
 .features-block__item {
     background-color: white;
+    margin-right: 20px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    
 }
 
 .features-block__item-photo img {
     text-align: center;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.features-block__item-text {
+    position: relative;
+    padding-top: 10px;
+}
+
+.features-block__item-text span{
+     position: absolute;
+    bottom: 0px;
+    right: 0px;
+    text-decoration: underline;
+}
+
+.about {
+    padding-top: 15px;
+}
+
+.about-img-block {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.about-img-block img {
+    padding-bottom: 5px;
+}
+
+.about-text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.about-text a {
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    text-decoration: underline;
+    color: #5b5b5b; 
+}
+
+footer {
+    padding-top: 15px;
+    padding-bottom: 100px;
+    
+}
+
+.rights {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
+.rights-menu__item {
+    margin: 0 20px;
+}
 
+.rights-menu__item a {
+    font-size: 14px;
+    color: #5b5b5b;
+    text-decoration: none;
+}
 
-
-
-
-
-
-
+.rights-menu span {
+    color: #5b5b5b;
+    font-size: 14px;
+}
